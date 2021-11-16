@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	border: none;
 	font-family: 'Raleway', sans-serif;
-	list-style: none;
 	outline: none;
 	text-decoration: none;
 }
@@ -12,4 +11,29 @@
 body {
 	margin: 0;
 	padding: 0;
+}
+
+.gif-search-app {
+	position: relative;
+	left: 50%;
+	padding-top: 60px;
+	transform: translateX(-50%);
+	width: 60%;
+}
+
+.gif-search-app hr {
+	border: 1px solid grey;
+}
+
+.gif-search-app ol {
+	padding: 0 15px;
+}
+
+input {
+	border: 1px solid grey;
+	border-radius: 5px;
+	color: grey;
+	font-size: 1.2rem;
+	padding: 5px;
+	width: 100%;
 }
