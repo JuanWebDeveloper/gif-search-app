@@ -8,7 +8,7 @@ const GifSearchApp = () => {
 	return (
 		<div className='gif-search-app'>
 			<h2>Gif Search App</h2>
-			<GifSearch />
+			<GifSearch setCategories={setCategories} />
 			<hr />
 
 			<ol>
