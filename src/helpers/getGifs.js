@@ -4,11 +4,11 @@ export const getGifs = async (category) => {
 	const response = await fetch(url);
 	const { data } = await response.json();
 
-	const gifsData = data.map((img) => {
+	const gifsData = data.map((gif) => {
 		return {
-			id: img.id,
-			title: img.title,
-			url: img.images?.downsized_still.url,
+			id: gif.id,
+			title: gif.title,
+			url: gif.images?.downsized_still.url,
 		};
 	});
 
