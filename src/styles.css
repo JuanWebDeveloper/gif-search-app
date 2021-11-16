@@ -9,55 +9,118 @@
 }
 
 body {
+	background: #00002a;
 	margin: 0;
 	padding: 0;
 }
 
 .gif-search-app {
-	position: relative;
+	background: #044c5e80;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	height: 90vh;
 	left: 50%;
-	padding-top: 60px;
-	transform: translateX(-50%);
-	width: 60%;
+	overflow: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	padding: 20px 15px;
+	top: 5%;
+	transform: translate(-50%);
+	width: 70vw;
+}
+
+.gif-search-app::-webkit-scrollbar {
+	transition: all 0.5s ease-in;
+	width: 5px;
+}
+
+.gif-search-app::-webkit-scrollbar-thumb {
+	background: #044c5e;
+	border-radius: 5px;
+	transition: all 0.5s ease-in;
+}
+
+.gif-search-app h2 {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin: 0;
+	text-shadow: 0px 0px 2px #ffffff80, 0px 0px 2px #ffffff80;
+	text-align: center;
+}
+
+.gif-search-app input {
+	border-radius: 5px;
+	color: #333;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 15px 0;
+	padding: 8px 5px;
+	width: 100%;
 }
 
 .gif-search-app hr {
-	border: 1px solid grey;
+	border: 1px solid #fff;
 }
 
-.gif-search-app ol {
-	padding: 0 15px;
+.gif-search-app h3 {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin: 0;
+	margin-top: 15px;
+	text-shadow: 0px 0px 2px #ffffff80, 0px 0px 2px #ffffff80;
 }
 
-input {
-	border: 1px solid grey;
-	border-radius: 5px;
-	color: grey;
-	font-size: 1.2rem;
-	padding: 5px;
-	width: 100%;
+.loading {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-shadow: 0px 0px 2px #ffffff80, 0px 0px 2px #ffffff80;
+	letter-spacing: 3px;
+	text-align: center;
 }
 
 .card-grid {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .card-item {
 	align-content: center;
-	border: 1px solid grey;
+	background: #00002a50;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
-	margin-bottom: 10px;
-	margin-right: 10px;
+	margin-top: 20px;
+	height: 190px;
 	overflow: hidden;
-}
-
-.card-item p {
-	padding: 5px;
-	text-align: center;
+	width: 30%;
 }
 
 .card-item img {
-	max-width: 170px;
+	height: 120px;
+	width: 100%;
+}
+
+.card-item p {
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: 500;
+	padding: 0 5px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+	.gif-search-app {
+		width: 90vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.card-item {
+		width: 100%;
+	}
 }

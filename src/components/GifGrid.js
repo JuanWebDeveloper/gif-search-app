@@ -9,9 +9,9 @@ const GifGrid = ({ category }) => {
 
 	return (
 		<React.Fragment>
-			<h3>{category}</h3>
+			<h3 className='animate__animated animate__backInLeft'>{category}</h3>
 
-			{loading && <p>Loading...</p>}
+			{loading && <p className='animate__animated animate__heartBeat loading'>Loading...</p>}
 
 			<div className='card-grid'>
 				{gifs.map((gif) => (

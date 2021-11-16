@@ -17,7 +17,7 @@ const GifSearch = ({ setCategories }) => {
 
 	return (
 		<form onSubmit={handleSubmit}>
-			<input type='text' placeholder='Búsqueda de GIF' value={inputValue} onChange={handleInputChange} />
+			<input type='text' className='animate__animated animate__backInDown' placeholder='Búsqueda de GIF' value={inputValue} onChange={handleInputChange} />
 		</form>
 	);
 };
